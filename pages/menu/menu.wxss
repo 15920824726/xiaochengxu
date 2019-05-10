@@ -1,0 +1,171 @@
+.menu_container{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+.menu_container .menu_title{
+  position: relative;
+  height: 150rpx;
+  width: 100%;
+  background-color: #f7f1f1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.menu_container .menu_title .menu_main_title{
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #3a3a3a;
+  margin-top: 20rpx;
+}
+.menu_container .menu_title .menu_subtitle{
+  font-size: 24rpx;
+  font-weight: bold;
+  color: #666666;
+  margin-top: 26rpx;
+}
+
+.menu_container .menu_main_content{
+  position: relative;
+  display: block;
+}
+
+.menu_container .menu_main_content .menu_item{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 22rpx 32rpx 25rpx 32rpx;
+  display: flex;
+  justify-content: space-between; 
+}
+
+.menu_container .menu_main_content .menu_item .menu_phto{
+  width: 208rpx;
+	height: 156rpx;
+	background-color: #ffffff;
+	border-radius: 4rpx;
+}
+
+.menu_item_right{
+  width: 458rpx;
+  border-bottom:1rpx solid #e4e4e4;
+  padding-bottom:25rpx;
+}
+
+.menu_item_right .menu_row_title{
+  font-size: 32rpx;
+  color: #3a3a3a;
+  font-weight: bold;
+}
+
+.menu_item_right .menu_row_subtitle{
+  font-size: 24rpx;
+  color: #666666;
+  font-weight: bold;
+  line-height: 24rpx;
+  margin-top: 13rpx;
+}
+
+.menu_price_distance{
+  margin-top: 12rpx;
+  color: #666666;
+  font-size: 22rpx;
+  line-break: 22rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu_price_distance image{
+  width: 16rpx;
+  height: 16rpx;
+  margin: 0 6rpx 0 0;
+}
+
+.menu_price_distance .menu_price text{
+  margin-left: 22rpx;
+}
+
+.menu_price_distance > text{
+  display: inline-block;
+  background-color: #e6e6e6;
+  border-radius: 15rpx;
+  padding: 5rpx 10rpx;
+  color: #969696;
+  font-size: 20rpx;
+}
+
+.menu_row_label{
+  font-size: 20rpx;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin-top: 9rpx;
+}
+
+.menu_row_label .menu_wechat{
+  width: 132rpx;
+  height: 36rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  background-color: #00b700;
+  border-radius: 4rpx;
+}
+
+.menu_row_label .menu_wechat image{
+  width: 22rpx;
+  height: 20rpx;
+  margin-right: 3rpx;
+}
+
+.menu_row_label .menu_alipay image{
+  width: 22rpx;
+  height: 22rpx;
+  margin-right: 3rpx;
+}
+
+.menu_row_label .menu_alipay{
+  width: 112rpx;
+	height: 36rpx;
+	background-color: #24afff;
+	border-radius: 4rpx;
+  margin-left: 12rpx;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+.menu_package{
+  color: #666666;
+  font-weight: bold;
+  font-size: 24rpx;
+  margin-top: 24rpx;
+  display: flex;
+  align-items: center;
+} 
+.menu_package image{
+  width: 24rpx;
+  height: 24rpx;
+}
+.menu_discount{
+  color: #666666;
+  font-weight: bold;
+  font-size: 24rpx;
+  margin-top: 20rpx;
+  display: flex;
+  align-items: center;
+}
+
+.menu_package image,
+.menu_discount image{
+  width: 24rpx;
+  height: 24rpx;
+}
+
+.menu_package text,
+.menu_discount text{
+  margin-left: 11rpx;
+}

@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "首页",
+  "navigationBarBackgroundColor": "white",
+  "navigationBarTextStyle": "black",
+  "usingComponents": {
+    "dialog": "/components/Login/login",
+    "tabbar": "/components/Tabbar/tabbar"
+  }
+}

@@ -1,0 +1,6 @@
+<!--components/Login/login.wxml-->
+<text>components/Login/login.wxml</text>
+<button class='login_btn'>
+  <text></text>
+  <slot></slot>
+</button>

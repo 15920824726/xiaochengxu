@@ -1,0 +1,8 @@
+<view class="tab-bar">
+    <block wx:key='{{index}}' wx:for="{{list}}">
+        <navigator data-index='{{index}}' bindtap='_selectTab' url="{{item.pagePath}}" open-type="{{item.nav}}" class="menu-item">
+            <image wx:if="{{index== list_index}}"  src='{{item.selectedIconPath}}'></image>
+            <image wx:else  src='{{item.iconPath}}'></image>
+        </navigator>
+    </block>
+</view>

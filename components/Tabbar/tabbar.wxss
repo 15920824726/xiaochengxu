@@ -1,0 +1,89 @@
+/* components/Tabbar/tabbar.wxss */
+
+.tab-bar {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    height: 120rpx;
+    background:rgba(255,255,255,1);
+    color: #d5b68b;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tab-bar navigator {
+    height: 120rpx;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 33.33%;
+}
+
+.tab-bar navigator image:nth-of-type(1),
+.tab-bar navigator image:nth-of-type(3){
+  width: 64rpx;
+  height: 64rpx;
+}
+
+.tab-bar navigator image:nth-of-type(2){
+  width: 78rpx;
+  height: 78rpx;
+}
+
+.tab-bar>navigator:nth-of-type(2) view {
+    color: #1b1b19;
+    border-radius: 6rpx;
+    padding: 0 10rpx;
+    background-color: #d5b68b;
+}
+
+.tab-bar navigator view {
+    height: 60rpx;
+    display: flex;
+    align-items: center;
+}
+
+.tab-bar navigator view.select {
+    border-bottom: 7rpx solid #d5b68b;
+    color: #d5b68b;
+}
+
+.tab-bar navigator view.noSelect {
+    border-bottom: none;
+}
+
+.tab-bar>navigator:nth-of-type(2) view.select {
+    border-bottom: 7rpx solid #d5b68b;
+    color: #d5b68b;
+    background-color: transparent;
+}
+
+.tab-bar>navigator:nth-of-type(1) view.noSelect {
+    background-color: transparent;
+}
+
+.tab-bar>navigator:nth-of-type(2) view.noSelect {
+    border-bottom: none;
+}
+
+
+/*适配iphonex*/
+
+.fix-iphonex-footer {
+    bottom: 68rpx !important;
+}
+
+.fix-iphonex-footer::after {
+    content: ' ';
+    position: fixed;
+    bottom: 0 !important;
+    height: 68rpx !important;
+    width: 100vw;
+    background: #1b1b19;
+}
+
+/* 适配消息来源  */

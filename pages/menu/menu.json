@@ -1,0 +1,10 @@
+{
+    "navigationBarBackgroundColor": "#f7f1f1",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "商家列表",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "usingComponents": {
+      "dialog": "/components/Dialog/dialog"
+    }
+}

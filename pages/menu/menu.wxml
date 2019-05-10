@@ -1,0 +1,46 @@
+<view class='menu_container'>
+  <dialog id='dialog' 
+      title='我是标题' 
+      content='恭喜你，学会了小程序组件' 
+      cancelText='知道了' 
+      confirm='谢谢你'
+      placeId='100'
+      placeImage= '{{[1,2,3]}}'
+      placeObject= '{{obj}}'
+      bind:cancelEvent="_cancelEvent"  
+      bind:confirmEvent="_confirmEvent">
+  </dialog>
+  <button type="primary" bindtap="showDialog"> ClickMe! </button>
+  <view class='menu_title'>
+    <view class='menu_main_title'>请确认你所在的商家</view>
+    <view class='menu_subtitle'>以下为附近1km内支持中文菜单的商家   </view>
+  </view>
+  <view class='menu_main_content'>
+    <view wx:key="{{item.menu_id}}" wx:for="{{arrayMenu}}" class='menu_item'>
+      <view class='menu_item_right'>
+        <view class='menu_row_title'>水门市场</view>
+        <view class='menu_row_subtitle'>Pratu Nam Market</view>
+        <view class='menu_price_distance'>
+          <view class='menu_price'>
+            <text>$200/人</text>
+          </view>
+          <text>10km</text>
+        </view>
+        <view class='menu_row_label'>
+          <view class='menu_wechat'>
+            <text>微信支付</text>
+          </view>
+          <view class='menu_alipay'>
+            <text>支付宝</text>
+          </view>
+        </view> 
+        <view class='menu_package'>
+          <text>微信红包商家</text>
+        </view>
+        <view class='menu_discount'>
+          <text>9折优惠</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

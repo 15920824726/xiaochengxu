@@ -1,0 +1,16 @@
+<wxs src="./tool.wxs" module="tools" />
+
+
+<view class="index-container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getAvatar"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+    <button bindtap='goMenu'>跳转到menu</button>
+    <view>{{tools.getCreatedTime(time)}}</view>
+  </view>
+</view>
+
+<tabbar type='index' list='{{tabDatas}}'></tabbar>
