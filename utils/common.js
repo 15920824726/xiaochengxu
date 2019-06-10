@@ -33,5 +33,5 @@ module.exports = {
   showLoading: showLoading,
   showLoadFailToast: showLoadFailToast,
   showMsgToast: showMsgToast,
-  showMsgToast: showMsgToast
+  hideLoading: hideLoading
 }
