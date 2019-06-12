@@ -56,12 +56,6 @@ Page({
     // 在login页面执行
     let that = this
     var count = 0
-    var index =setInterval(res=>{
-      console.log('count: ' + count++ )
-    },3000)
-    console.log('index: '+ index)
-    
-    console.log(e)
     app.globalData.userInfo = e.detail.userInfo
     this.setData({
       userInfo: e.detail.userInfo,

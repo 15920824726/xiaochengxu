@@ -11,6 +11,13 @@ App({
     // 展示本地存储能力
     wx.getSystemInfo({
       success: function(res) {
+        // 适配iPhoneX 如果有底部加 68rpx; bottom:68rpx;
+        var model = res.model
+        if (model.search('iPhone X') != -1) {
+          wx.setStorageSync('isIphoneX', true)
+        } else {
+          wx.setStorageSync('isIphoneX', false)
+        }
         wx.setStorageSync('dpr', res.pixelRatio > 2 ? 3: 2)
       },
     })
