@@ -1,6 +1,6 @@
 <!--pages/my/my.wxml-->
 <view class='my-container'>
-  <view>heheh</view>
+  <view>我的页面</view>
 </view>
 
 <tabbar type='user' list="{{tabDatas}}"></tabbar>

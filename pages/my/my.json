@@ -1,7 +1,5 @@
 {
   "navigationBarTitleText": "我的",
-  "navigationBarBackgroundColor": "white",
-  "navigationBarTextStyle": "black",
   "usingComponents": {
     "tabbar": "/components/Tabbar/tabbar"
   }

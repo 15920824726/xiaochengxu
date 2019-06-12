@@ -6,3 +6,7 @@
   padding-bottom:120rpx;
   box-sizing:border-box;
 }
+
+view{
+  text-align: center;
+}

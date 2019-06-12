@@ -1,0 +1,5 @@
+<!--pages/project/project.wxml-->
+<view class='project-container'>
+  <view>工程页面</view>
+</view>
+
